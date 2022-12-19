@@ -1,0 +1,326 @@
+/* import fontawesome */
+@import url("font-awesome.min.css");
+/* Font-face */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway'), url('../fonts/Raleway-Regular.woff') format('woff');
+    src: local('Raleway'), url('../fonts/Raleway-Regular.ttf') format('ttf');
+}
+/* default page style start  */
+* {
+    margin: 0;
+}
+body {
+    font-family: "Raleway", Helvetica, sans-serif;
+    color: #444;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* default page style end  */
+/* header style start  */
+.header{
+    background-image: url("../img/dark_tint.png"), url("../img/bokeh_car_lights_bg.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+/* top-menu style start  */
+.header h1{
+    float: left;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav ul li{
+    display: inline;
+    padding-left: 20px;
+}
+.nav{
+    text-align: right;
+}
+.top-menu{
+    padding: 40px;
+}
+.nav ul li a{
+    color: rgba(255, 255, 255, .5);
+    transition: color 0.2s ease-in-out;
+}
+.nav ul li a:hover{
+    color: white;
+}
+/* top-menu style end  */
+/* banner-content style start  */
+.banner-content{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 130px 0px;
+}
+.banner-content h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.banner-content p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+/* banner-content style end  */
+/* header style end */
+
+/* ............................................................ */
+
+/* main style start  */
+/* container style stert  */
+/* container header style start  */
+.container{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f5f5f5;
+    border-top: 1px solid rgba(144, 144, 144, 0.25);
+    border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+}
+.container-item::after,
+.container-item::before{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container-header h2{
+    font-size: 40px;
+}
+.container-header p{
+    font-size: 15px;
+    margin: 20px 0px 40px 0px;
+    color: #858585;
+}
+/* container header style end  */
+/* container item style start  */
+.container-item{
+    margin: 0px auto;
+    width: 85%;
+}
+.item-box{
+    float: left;
+    border: 1px solid rgba(144, 144, 144, 0.25);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0px 10px 15px 10px;
+    width: calc(calc(100% / 3) - 62px);
+}
+/* icon style start */
+.big{
+    padding: 40px;
+    border-radius: 100%;
+    font-size: 40px;
+}
+.icon-blue{
+    color: #ffffff;
+    background-color: #3cadd4;
+}
+.icon-green{
+    color: #ffffff;
+    background-color: #add43c;
+}
+.icon-red{
+    color: #ffffff;
+    background-color: #d43c61;
+}
+/* icon style end  */
+
+.item-box h3{
+    color:#858585;
+    margin: 15px 0px;
+}
+.item-box p{
+    color: #444444;
+    line-height: 25px;
+}
+/* container item style end  */
+/* container style end  */
+/* about style start  */
+/* about header style start  */
+.about{
+    text-align: center;
+    padding: 50px 0px;
+}
+.about-header h2{
+    font-size: 40px;
+    line-height: 60px;
+}
+.about-header p{
+    color: #858585;
+}
+/* about header style end  */
+/* about content style start  */
+.about-content{
+    width: 90%;
+    border-top: 1px solid rgba(144, 144, 144, 0.25) ;
+    border-bottom: 1px solid rgba(144, 144, 144, 0.25) ;
+    margin: 50px auto;
+    padding: 35px 0px;
+}
+.about-content::after,
+.about-content::before{
+    content: '';
+    display: block;
+    clear: both;
+}
+.user img{
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.user{
+    float: left;
+    margin: 0px 10px;
+    width: calc(calc(100% / 4) - 20px);
+}
+/* about content style end  */
+/* about footer style start  */
+.about-footer{
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+    padding-bottom: 50px;
+}
+.about-footer p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+.user h4{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.user p{
+    font-size: 15px;
+}
+/* about footer style end  */
+/* about style end  */
+/* contact style start  */
+.contact{
+    background-color: #3cadd4;
+    color: #ffffff;
+    padding-top: 50px;
+}
+/* contact header style start  */
+.contact-header{
+    text-align: center;
+}
+.contact-header h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.contact-header p{
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+/* contact header style end  */
+/* contact form style start */
+.contact-form{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.contact-form input{
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 0px;
+    border-radius: 5px;
+    width: 25%;
+}
+.contact-form textarea{
+    height: 200px;
+    padding: 15px;
+    width: 53%;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 30px;
+}
+::placeholder{
+    font-family: "Raleway";
+}
+/* contact form style end */
+/* contact style end  */
+/* main style end  */
+
+/* .............................................. */
+/* footer style start  */
+.footer{
+    background-color: #383b43;
+    padding: 100px 20px;
+}
+li{
+    display: inline;
+    color: #858585;
+    margin-left: 20px;
+}
+li a {
+    color: #858585;
+}
+
+
+
+
+
+
+
+/* footer style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* buttons style start */
+.btn{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn-gray{
+    background-color: #fff !important;
+    color: #444 !important;
+}
+
+.btn-blue{
+    background-color: #3cadd4 !important;
+    color: #fff !important;
+}
+
+.btn-dark{
+    background-color: #383b43 !important;
+    color: #ffffff !important;
+}
+
+.btn-big {
+    font-size: 25 !important;
+    border-radius: 30px !important;
+    padding: 17px 35px;
+}
+/* buttons style end */
+/* box media  */
+@media only screen and (max-width: 900px){
+    .item-box{
+        width: 100%;
+        padding: 50px 0px;
+        margin: 20px 0px;
+    }
+}
